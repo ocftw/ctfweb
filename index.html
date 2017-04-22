@@ -67,6 +67,7 @@
                 <div class="dib dtc-ns v-mid tl w-20">
                     <a href="/" class="dib f6 f4-ns fw6 link white-90" title="Home">#CivilTechFest</a>
                 </div>
+                <!-- menu for large -->
                 <nav class="dn dtc-l v-mid w-100 tl tr-ns mt2 mt0-ns">
                     <a title="Documentation" href="#" class="dn dib-ns f6 fw6 hover-gray link white-90 mr3">About CTF</a>
                     <a title="Components" href="#" class="f6 fw6 hover-gray link white-90 mr3 dib">Keynote Speaker</a>
@@ -76,10 +77,21 @@
                     <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="f6 fw6 hover-grey link white-90 mr3 dib">Information</a>
                     <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="f6 fw6 hover-grey link white-90 mr3 dib">Sponser</a>
                 </nav>
-                    <nav class="dib w-60 dn-l tr v-mid fr pr2 pr0-ns">
-                        <span class="demo-icon icon-menu f5 f4-ns">&#xf0c9;</span>
-                    </nav>
+                <!-- hamburger -->
+                <nav class="dib w-60 dn-l tr v-mid fr pr2 pr0-ns">
+                    <span class="demo-icon icon-menu f5 f4-ns menu-btn">&#xf0c9;</span>
+                </nav>
             </div>
+            <!-- togglable on n-l -->
+            <nav class="dn w-100 mt3 menu-body">
+                <a title="Documentation" href="#" class="db ma3 f6 fw6 hover-gray link white-90">About CTF</a>
+                <a title="Components" href="#" class="db ma3 f6 fw6 hover-gray link white-90">Keynote Speaker</a>
+                <a title="Gallery of sites built with Tachyons" href="#" class="db ma3 f6 fw6 hover-gray link white-90">Agenda</a>
+                <a title="Resources" href="/resources/" class="db ma3 f6 fw6 hover-gray link white-90">Tickets</a>
+                <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="db ma3 f6 fw6 hover-gray link white-90">Call for Partners</a>
+                <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="db ma3 f6 fw6 hover-gray link white-90">Information</a>
+                <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="db ma3 f6 fw6 hover-gray link white-90">Sponser</a>
+            </nav>
         </header>
         <!-- hero -->
         <article class="w-100 center relative mt3 mt0-ns">
@@ -410,6 +422,12 @@
             </section>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', function (e) {
+            document.querySelector('.menu-body').classList.toggle('db')
+        })
+    </script>
 </body>
 
 </html>
