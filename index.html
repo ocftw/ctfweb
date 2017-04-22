@@ -62,10 +62,6 @@
             color: #00D2D6
         }
 
-        .menu-btn {
-            cursor: pointer;
-        }
-
         .h6 {
             height: 340px;
         }
@@ -91,7 +87,7 @@
                 </nav>
                 <!-- hamburger -->
                 <nav class="dib w-60 dn-l tr v-mid fr pr2 pr0-ns">
-                    <span class="demo-icon icon-menu f5 f4-ns menu-btn">&#xf0c9;</span>
+                    <span class="demo-icon icon-menu f5 f4-ns menu-btn pointer">&#xf0c9;</span>
                 </nav>
             </div>
             <!-- togglable on n-l -->
@@ -127,7 +123,7 @@
                 </div>
 
                 <div class="mt4">
-                    <div class="white bg-orange ph4 pv3">- About #CivilTechFest</div>
+                    <div class="white bg-orange ph4 pv3 accordion-toggle pointer">- About #CivilTechFest</div>
                     <div class="bg-black-10 pv3 ph4 nested-copy-line-height">
                         <p class="pv2">2017 世界公民科技週，主軸將由開放文化基金會邀請英國知名公民科技組織 mySociety，於2017 年 9 月，與 WCIT 共同舉辦「公民科技動能推升研討會 The Impacts of Civic Technology Conference」。此研討會與 g0v 零時政府年會有所區隔，較具學術性，接軌公民科技與學界研究新領域。並於研討會前後邀請國際與亞洲相關組織，舉辦其它活動與國際組織會議，包括 Data Bootcamp for NGOs 、開放政府研究報告發布等議程，開啟建立世界民主科技網絡的相關討論，期待透過串連世界各地的相關專家、團體，在台灣逐漸打造全球公民科技之重鎮。</p>
                         <p class="pv2">Civic Tech Fest 2017 is a week-long collection of events coordinated by the Open Culture Foundation alongside the WCIT in September 2017. The main highlight for the Civic Tech Fest is “TICTeC@Taipei: The Impacts of Civic Technology Conference”, co-organized by mySociety.</p>
@@ -136,8 +132,8 @@
                     </div>
                 </div>
                 <div class="mt4">
-                    <div class="white bg-orange ph4 pv3">- About TICTeC@Taipei</div>
-                    <div class="bg-black-10 pv3 ph4">
+                    <div class="white bg-orange ph4 pv3 accordion-toggle pointer">+ About TICTeC@Taipei</div>
+                    <div class="dn bg-black-10 pv3 ph4">
                         <p>TICTeC（The Impacts of Civic Technology Conference）為一年一度關注公民科技影響力的國際研討會，由英國歷史悠久的公民科技組織 mySociety 於 2015 年發起。該研討會旨於分析與評估公民科技的發展，並著重研究公民科技在不同社會環境與政治脈絡下的影響力與成效。 mySociety 在推動 TICTeC 前，曾於 2014 在智利舉辦 PoplusCon，也是最早開始串連世界各的公民科技社群、專案交流的大型網絡之一。</p>
 
                         <p>TICTeC (The Impacts of Civic Technology Conference) is an annual international conference that focuses on the impact of civic tech, and was first established in 2015 by the influential UK group “mySociety”. This conference aims to analyze and assess the development of civic tech, and focuses on studying the impact and effectiveness of civic tech under different social environments and political contexts.</p>
@@ -158,14 +154,14 @@
                     </div>
                 </div>
                 <div class="mt4">
-                    <div class="white bg-orange ph4 pv3">- About OCF</div>
-                    <div class="bg-black-10 pv3 ph4">
+                    <div class="white bg-orange ph4 pv3 accordion-toggle pointer">+ About OCF</div>
+                    <div class="dn bg-black-10 pv3 ph4">
                         <p>The Open Culture Foundation (OCF) is dedicated to promoting a number of open culture campaigns, including open source, open standards, open hardware, open data, open systems, and other related “open” concepts. You can donate to us online at: <a href="http://ocf.tw/donate">http://ocf.tw/donate/</a></p>
                     </div>
                 </div>
                 <div class="mt4">
-                    <div class="white bg-orange ph4 pv3">- About mySociety</div>
-                    <div class="bg-black-10 pv3 ph4">blah blah blah</div>
+                    <div class="white bg-orange ph4 pv3 accordion-toggle pointer">+ About mySociety</div>
+                    <div class="dn bg-black-10 pv3 ph4">blah blah blah</div>
                 </div>
             </div>
 
@@ -495,6 +491,18 @@
                 if (body.classList.contains('db')) {
                     body.classList.remove('db')
                 }
+            })
+        })
+
+        document.querySelectorAll('.accordion-toggle').forEach(function (x) {
+            x.addEventListener('click', function (e) {
+                var text = e.target.textContent
+                if (text.includes('+')) {
+                    e.target.textContent = e.target.textContent.replace('+', '-')
+                } else {
+                    e.target.textContent = e.target.textContent.replace('-', '+')
+                }
+                e.target.nextElementSibling.classList.toggle('dn')
             })
         })
     </script>
