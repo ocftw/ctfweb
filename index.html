@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+
+        .sponser {
+            height: 258px;
+            width: 248px;
+        }
+
+        @media screen and (min-width: 30em) {
+            .multi-bg {
+                background-image: url('./background-left.png'), url('./background-right.png');
+                background-repeat: repeat-y, repeat-y;
+                background-position: top left, top right;
+            }
+        }
+
+        .hero-left {
+            top: 15%;
+            left: 15%;
+        }
+
+        .hero-right {
+            top: 60%;
+            right: 14%;
+        }
+
+        .ticket-bg {
+            background-image: url('./bg2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bg-orange {
+            background-color: #F4A144;
+        }
+    </style>
+</head>
+
+<body class="w-100">
+    <div class="cf">
+        <header class="w-100 pa3 ph5-ns bg-black-70 fixed z-999">
+            <div class="db dt-ns mw9 center v-mid w-100 white-90">
+                <div class="db dtc-ns v-mid tl w-20">
+                    <a href="/" class="dib f5 f4-ns fw6 link white-90" title="Home">#CivilTechFest</a>
+                </div>
+                <nav class="db dtc-ns v-mid w-100 tl tr-ns mt2 mt0-ns">
+                    <a title="Documentation" href="#" class="dn dib-ns f6 fw6 hover-gray link white-90 mr3">About CTF</a>
+                    <a title="Components" href="#" class="f6 fw6 hover-gray link white-90 mr3 dib">Keynote Speaker</a>
+                    <a title="Gallery of sites built with Tachyons" href="#" class="f6 fw6 hover-gray link white-90 mr3 dib">Agenda</a>
+                    <a title="Resources" href="/resources/" class="f6 fw6 hover-grey link white-90 mr3 dib">Tickets</a>
+                    <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="f6 fw6 hover-grey link white-90 mr3 dib">Call for Partners</a>
+                    <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="f6 fw6 hover-grey link white-90 mr3 dib">Information</a>
+                    <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="f6 fw6 hover-grey link white-90 mr3 dib">Sponser</a>
+                </nav>
+            </div>
+        </header>
+        <!-- hero -->
+        <article class="w-100 center relative">
+            <h2 class="dn db-l white absolute hero-left f4-ns lh-title">Sep. 11th - 16th<br />TAIWAN</h2>
+            <h2 class="dn db-l white absolute hero-right f4-ns lh-title">Co-host with WCIT 2017 &<br />TICTeC@Taipei</h2>
+            <img src="./hero.png" class="mw-100 mh-100">
+        </article>
+    </div>
+
+    <main class="w-100">
+        <article class="ph3 ph6-ns pv4 pv5-ns mw9 center multi-bg">
+            <div>
+                <div class="mw9 center tc">
+                    <h1 class="mv2 f3 f2-ns black-80">#CivilTechFest</h1>
+
+                    <div class="center tl mt4">
+                        <p>Civic Tech is a new kind of civic engagement that uses technology and has become a key building block for democracies in the digital age.</p>
+                        <p>“Civic Tech Fest” is Asia’s first ever civic technology festival and conference, featuring a series of forums, workshops, roundtables, conferences and hackathons related to open data and open government. Civic Tech Fest will also host “TICTeC@Taipei: Impacts of Civic Technology Conference,” organized by mySociety.</p>
+                        <p>We will invite a number of experts, academics, hackers and members of governments to discuss and collaborate, and most importantly, have fun together!</p>
+                    </div>
+                </div>
+
+                <div class="mt4">
+                    <div class="white bg-orange ph4 pv3">- About #CivilTechFest</div>
+                    <div class="bg-black-10 pv3 ph4 nested-copy-line-height">
+                        <p class="pv2">2017 世界公民科技週，主軸將由開放文化基金會邀請英國知名公民科技組織 mySociety，於2017 年 9 月，與 WCIT 共同舉辦「公民科技動能推升研討會 The Impacts of Civic Technology Conference」。此研討會與 g0v 零時政府年會有所區隔，較具學術性，接軌公民科技與學界研究新領域。並於研討會前後邀請國際與亞洲相關組織，舉辦其它活動與國際組織會議，包括 Data Bootcamp for NGOs 、開放政府研究報告發布等議程，開啟建立世界民主科技網絡的相關討論，期待透過串連世界各地的相關專家、團體，在台灣逐漸打造全球公民科技之重鎮。</p>
+                        <p class="pv2">Civic Tech Fest 2017 is a week-long collection of events coordinated by the Open Culture Foundation alongside the WCIT in September 2017. The main highlight for the Civic Tech Fest is “TICTeC@Taipei: The Impacts of Civic Technology Conference”, co-organized by mySociety.</p>
+
+                        <p class="pv2">We invite regional and international groups to create events and activities over the span of the week. In addition to TICTeC@Taipei, featured events include data bootcamp for NGOs, presentation sessions on open government research, and g0v.tw hackathon. We hope through the course of our discussion, we can lay the groundwork for a global civic tech network, foster more collaborate in global civic tech movement.</p>
+                    </div>
+                </div>
+                <div class="mt4">
+                    <div class="white bg-orange ph4 pv3">- About TICTeC@Taipei</div>
+                    <div class="bg-black-10 pv3 ph4">blah blah blah</div>
+                </div>
+                <div class="mt4">
+                    <div class="white bg-orange ph4 pv3">- About OCF</div>
+                    <div class="bg-black-10 pv3 ph4">blah blah blah</div>
+                </div>
+                <div class="mt4">
+                    <div class="white bg-orange ph4 pv3">- About mySociety</div>
+                    <div class="bg-black-10 pv3 ph4">blah blah blah</div>
+                </div>
+            </div>
+
+            <div class="mt4">
+                <div class="mw9 center tc">
+                    <h1 class="mt0 f5 f3-ns">Keynote Speakers</h1>
+
+                    <section class="cf">
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fl w-100 w-25-ns">
+                            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                                <div class="tc">
+                                    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="photo of a kitty staring at you">
+                                    <h1 class="f3 mb2">mimi w.</h1>
+                                    <h2 class="f5 fw4 gray mt0">cco (chief cat officer)</h2>
+                                </div>
+                            </article>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- agenda -->
+        <article class="ph3 ph6-ns pv4 pv4-ns bg-black-70 white-90 tc">
+            <div class="center mw8">
+                <h1>Agenda & Side Events</h1>
+
+                <div class="tl pb3">
+                    <div class="bb b--white-90">
+                        <h3>TICTeC: 9/11-12</h3>
+                        <p>blah blah</p>
+                    </div>
+                    <div class="bb b--white-90">
+                        <h3>Important Dates</h3>
+                        <p>blah blah</p>
+                    </div>
+                    <div>
+                        <h3>g0v Hackathon 9/16(Sat) TBD</h3>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ticket -->
+        <article class="ph3 ph6-ns pv4 pv5-ns cf ticket-bg">
+            <div class="center mw8">
+                <section class="fl w-100 w-50-ns pa2">
+                    <div class="w-100 bg-black-70 white-90 tc">
+                        <h3 class="ph3 ph6-ns pv4 ma0 pv3-ns bg-white-90 orange">Early Bird Ticket</h3>
+                        <div class="ph3 pv4">
+                            <h2>Early Bird tickets: 600 USD</h2>
+                            <p class="ph5">
+                                (Full access to WCIT and Civic Tech Fest.<br/> 4-night Accommodation 9/9-13 included)
+                            </p>
+
+                            <div class="ph2 pv3 mt4 f4 br2 bg-orange mt1 w-50 center">Get It!</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fl w-100 w-50-ns pa2">
+                    <div class="w-100 bg-black-70 white-90 tc">
+                        <h3 class="ph3 ph6-ns pv4 ma0 pv3-ns bg-white-90 orange">Call for Partners</h3>
+                        <div class="ph3 pv3">
+                            <p class="ph5 f5">We invite individuals and organizations to submit events / unconf proposals of no more than 300 words by 25th April 2017. </p>
+                            <h3>Please use this form</h3>
+                            <p class="ph2 f6 lh-title">
+                                Those selected for inclusion in the conference programme will be notified no later than 10th May 2017.</p>
+                            <p class="ph2 f6 lh-title">Presenters will be required to register for the conference by 20th May in order to confirm their slot.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!-- location -->
+        <article class="ph3 ph6-ns pv4 pv5-ns bg-white-90 cf">
+            <div class="center mw8">
+                <h2 class="bb b--orange tc w-100 pv3 normal">Location</h2>
+                <section class="fl w-100 w-50-ns pa3">
+                    <div class="w-100 tl">
+                        <h3 class="ma0 normal">Where to stay</h3>
+                        <p class="pv3 f6 lh-copy">
+                            This year we're setting up at The Standard Hotel Downtown. Use the code CORE77 when making your reservation to get a 15% discount off the regular room rate. conference workshops will take place here, and we'll wrap day two at the swanky rooftop bar.
+                        </p>
+                        <img src="map.png">
+                    </div>
+                </section>
+                <section class="fl w-100 w-50-ns pa3">
+                    <h3 class="ma0 normal">Venue</h3>
+                    <p class="pv3 f6 lh-copy">
+                        Once again, we'll see you at the stunning Vibiana, the city's first Cathedral, in downtown L.A. Between the gorgeous interior, the reverberating acoustics, the sunny outdoor patio, and the delicious food prepared by their in-house chef, we can't wait to get back to this place.
+                    </p>
+                        <img src="map.png">
+                </section>
+            </div>
+        </article>
+
+        <!-- gray info -->
+        <article class="center ph3 ph6-ns pv4 pv5-ns bg-black-10 cf">
+            <div class="center mw8">
+                <section class="fl w-100 w-50-ns pa3">
+                    <div class="w-100 tl">
+                        <img src="./wcit-logo.png">
+                        <h3 class="normal ttu">About WCIT</h3>
+                        <div class="pv2 f6 lh-copy">
+                            First held in 1978 by WITSA(World Information Technology & Services Alliance),  the World Congress on Information Technology (WCIT) has become the premier international IT forum. Bringing together over 2,500 visionaries, captains of industry, government leaders and academics from more than 80 countries, it is an event of unparalleled scope and scale. Discussion topics range from emerging markets and technologies to legal and policy issues, user perspectives, new business opportunities and developing political and economic trends. The WCIT consistently attracts high level, internationally recognized leaders from government, industry and academia.
+                        </div>
+                    </div>
+                </section>
+                <section class="fl w-100 w-50-ns pa3">
+                    <div class="w-100 tl">
+                        <img src="./ocf-logo.png">
+                        <h3 class="normal ttu">About OCF</h3>
+                        <div class="pv2 f6 lh-copy">
+                            First held in 1978 by WITSA(World Information Technology & Services Alliance),  the World Congress on Information Technology (WCIT) has become the premier international IT forum. Bringing together over 2,500 visionaries, captains of industry, government leaders and academics from more than 80 countries, it is an event of unparalleled scope and scale. Discussion topics range from emerging markets and technologies to legal and policy issues, user perspectives, new business opportunities and developing political and economic trends. The WCIT consistently attracts high level, internationally recognized leaders from government, industry and academia.
+                        </div>
+                    </div>
+            </section>
+            </div>
+        </article>
+
+        <!-- sponsers -->
+        <article class="ph3 ph6-ns pv4 pv5-ns bg-white-90 cf">
+            <div class="center tc mw8">
+                <h1 class="mt0 f5 f2-ns normal">Sponsers</h1>
+
+                <section class="cf">
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./ocf-logo2.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./mysociety-logo.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./wcit-logo.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./ocf-logo2.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./ocf-logo2.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./mysociety-logo.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./wcit-logo.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./ocf-logo2.png">
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <div class="mt4 mw8 center tc">
+                <h1 class="mt0 f5 f2-ns normal">Partners</h1>
+
+                <section class="cf">
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./ocf-logo2.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./mysociety-logo.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./wcit-logo.png">
+                        </article>
+                    </div>
+                    <div class="fl w-100 w-25-ns pa2">
+                        <article class="sponser bg-black-10 flex justify-center items-center center">
+                            <img src="./ocf-logo2.png">
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-black-70 white-90 ph3 ph6-ns pv4 pv5-ns bt b--black-10 h-50 cf">
+        <div class="center mw8">
+            <section class="fl w-100 w-50-ns">
+                <h3>基金會資訊</h3>
+                <p class="f6">
+                    台北辦公室：(10058) 台北市中正區八德路一段94號4F<br />
+                    桃園辦公室：(33059) 桃園市桃園區中山路807號<br />
+                    Email：hi@ocf.tw<br />
+                    電話：(03) 220 7480<br />
+                    傳真：(03) 220 1542<br />
+                    統編：38552170
+                </p>
+            </section>
+            <section class="fl w-100 w-50-ns">
+                <h3>聯絡我們</h3>
+                <p class="f6">
+                    hi@ocf.tw<br />
+                    http://ocf.tw<br />
+                    Copyright © 2014 OCF.tw
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

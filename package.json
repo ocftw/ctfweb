@@ -1,0 +1,17 @@
+{
+  "name": "ctf-landingpage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "simple-autoreload-server": "^0.2.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Poga Po<poga.po@gmail.com",
+  "license": "MIT"
+}
