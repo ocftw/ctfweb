@@ -5,6 +5,17 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <style>
+        @font-face {
+            font-family: 'fontello';
+            src: url('./font/fontello.eot?28342297');
+            src: url('./font/fontello.eot?28342297#iefix') format('embedded-opentype'),
+                url('./font/fontello.woff?28342297') format('woff'),
+                url('./font/fontello.ttf?28342297') format('truetype'),
+                url('./font/fontello.svg?28342297#fontello') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             font-family: Helvetica, sans-serif;
         }
@@ -42,17 +53,21 @@
         .bg-orange {
             background-color: #F4A144;
         }
+
+        .demo-icon {
+            font-family: "fontello";
+        }
     </style>
 </head>
 
 <body class="w-100">
     <div class="cf">
-        <header class="w-100 pa3 ph5-ns bg-black-70 fixed z-999">
+        <header class="w-100 pa2 pa3-l ph5-ns bg-gray fixed z-999">
             <div class="db dt-ns mw9 center v-mid w-100 white-90">
-                <div class="db dtc-ns v-mid tl w-20">
-                    <a href="/" class="dib f5 f4-ns fw6 link white-90" title="Home">#CivilTechFest</a>
+                <div class="dib dtc-ns v-mid tl w-20">
+                    <a href="/" class="dib f6 f4-ns fw6 link white-90" title="Home">#CivilTechFest</a>
                 </div>
-                <nav class="db dtc-ns v-mid w-100 tl tr-ns mt2 mt0-ns">
+                <nav class="dn dtc-l v-mid w-100 tl tr-ns mt2 mt0-ns">
                     <a title="Documentation" href="#" class="dn dib-ns f6 fw6 hover-gray link white-90 mr3">About CTF</a>
                     <a title="Components" href="#" class="f6 fw6 hover-gray link white-90 mr3 dib">Keynote Speaker</a>
                     <a title="Gallery of sites built with Tachyons" href="#" class="f6 fw6 hover-gray link white-90 mr3 dib">Agenda</a>
@@ -61,10 +76,13 @@
                     <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="f6 fw6 hover-grey link white-90 mr3 dib">Information</a>
                     <a title="Tachyons on GitHub" href="http://github.com/tachyons-css/tachyons/" class="f6 fw6 hover-grey link white-90 mr3 dib">Sponser</a>
                 </nav>
+                    <nav class="dib w-60 dn-l tr v-mid fr pr2 pr0-ns">
+                        <span class="demo-icon icon-menu f5 f4-ns">&#xf0c9;</span>
+                    </nav>
             </div>
         </header>
         <!-- hero -->
-        <article class="w-100 center relative">
+        <article class="w-100 center relative mt3 mt0-ns">
             <h2 class="dn db-l white absolute hero-left f4-ns lh-title">Sep. 11th - 16th<br />TAIWAN</h2>
             <h2 class="dn db-l white absolute hero-right f4-ns lh-title">Co-host with WCIT 2017 &<br />TICTeC@Taipei</h2>
             <img src="./hero.png" class="mw-100 mh-100">
