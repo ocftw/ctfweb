@@ -22,9 +22,29 @@
             font-style: normal;
         }
 
-        @media screen and (min-width: 960px) and (max-width: 1180px) {
+        @media screen and (max-width: 48em) {
+            .hero-left {
+                display: none;
+            }
+
+            .hero-right {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 48em) and (max-width: 64em) {
             .block-col {
                 width: 33%;
+            }
+
+            .hero-left {
+                top: 20%;
+                left: 15%;
+            }
+
+            .hero-right {
+                top: 60%;
+                right: 6%;
             }
         }
 
@@ -41,14 +61,16 @@
             }
         }
 
-        .hero-left {
-            top: 15%;
-            left: 15%;
-        }
+        @media screen and (min-width: 60em) {
+            .hero-left {
+                top: 15%;
+                left: 15%;
+            }
 
-        .hero-right {
-            top: 60%;
-            right: 14%;
+            .hero-right {
+                top: 60%;
+                right: 14%;
+            }
         }
 
         .ticket-bg {
@@ -119,8 +141,8 @@
         </header>
         <!-- hero -->
         <article class="w-100 center relative">
-            <h2 class="dn db-l white absolute hero-left f4-ns lh-title">Sep. 11th - 16th<br />TAIWAN</h2>
-            <h2 class="dn db-l white absolute hero-right f4-ns lh-title">Co-host with WCIT 2017 &<br />TICTeC@Taipei</h2>
+            <h2 class="dn db-ns white absolute hero-left f4-ns lh-title">Sep. 11th - 16th<br />TAIWAN</h2>
+            <h2 class="dn db-ns white absolute hero-right f4-ns lh-title">Co-host with WCIT 2017 &<br />TICTeC@Taipei</h2>
             <img src="./hero.png" class="dn db-ns mw-100 mh-100">
             <img src="./hero-2.png" class="db dn-ns mw-100 mh-100">
         </article>
