@@ -4,4 +4,12 @@ CivicTechFest website Edit
 
 ## Development
 
-No build tool needed. Just edit `index.html`.
+#### Start dev server
+
+```
+$ npm i
+$ npm run dev
+// open localhost:8080/index.html
+```
+
+Edit `index.html`.

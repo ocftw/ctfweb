@@ -9,7 +9,7 @@
     "simple-autoreload-server": "^0.2.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "autoreload-server"
   },
   "keywords": [],
   "author": "Poga Po<poga.po@gmail.com",
